@@ -54,7 +54,7 @@ class ViewDataLaporan:
         MenuFrame=Frame(MainFrame, bd=2, width=1350, height=70, padx=18, pady=10, bg="Ghost White", relief=FLAT)
         MenuFrame.pack(fill=X, side=TOP, pady=10)
 
-        DataFrame=LabelFrame(MainFrame, bd=1, width=450, height=300, padx=31, pady=3, relief=RIDGE, font=('arial', 20, 'bold'), text="Daftar Barang")
+        DataFrame=LabelFrame(MainFrame, bd=1, width=450, height=300, padx=31, pady=3, relief=RIDGE, font=('arial', 20, 'bold'), text="Daftar Laporan")
         DataFrame.pack(side=TOP)
 
         DataFrameLeft=Frame(DataFrame, height=20)
@@ -79,17 +79,6 @@ class ViewDataLaporan:
             import ViewDetailLaporan
             ViewDetailLaporan.main(idlaporan)
 
-        '''def TambahLaporan():
-            import ViewTambahLaporan
-            ViewTambahLaporan.main()'''
-        
-        '''def UpdateUser():
-            global lp
-            searchLpr=daftarlaporan.curselection()[0]
-            lp=daftarlaporan.get(searchLpr)
-            idlaporan=lp[0]
-            import ViewUpdateUser
-            ViewUpdateUser.main(username)'''
 
         def HapusLaporan():
             global lp
@@ -143,12 +132,6 @@ class ViewDataLaporan:
         
         self.btnDetailData=Button(DataFrameRight, text="Detail", font=('arial', 16, 'bold'),bg='Ghost White', height=1, width=10, bd=4, relief=FLAT, command=LihatLaporan)
         self.btnDetailData.pack(side=TOP, pady=10)
-
-        '''self.btnTambahData=Button(DataFrameRight, text="Tambah", font=('arial', 16, 'bold'),bg='Ghost White',  height=1, width=10, bd=4, relief=FLAT, command=TambahUser)
-        self.btnTambahData.pack(side=TOP, pady=10)
-
-        self.btnPerbaruiData=Button(DataFrameRight, text="Perbarui", font=('arial', 16, 'bold'),bg='Ghost White', height=1, width=10, bd=4, relief=FLAT, command=UpdateUser)
-        self.btnPerbaruiData.pack(side=TOP, pady=10)'''
 
         self.btnHapusData=Button(DataFrameRight, text="Hapus", font=('arial', 16, 'bold'),bg='Ghost White', height=1, width=10, bd=4, relief=FLAT, command=HapusLaporan)
         self.btnHapusData.pack(side=TOP, pady=10)

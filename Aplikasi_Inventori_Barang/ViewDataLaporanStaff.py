@@ -49,7 +49,7 @@ class ViewDataLaporanStaff:
         MenuFrame=Frame(MainFrame, bd=2, width=1350, height=70, padx=18, pady=10, bg="Ghost White", relief=FLAT)
         MenuFrame.pack(fill=X, side=TOP, pady=10)
 
-        DataFrame=LabelFrame(MainFrame, bd=1, width=450, height=300, padx=31, pady=3, relief=RIDGE, font=('arial', 20, 'bold'), text="Daftar Barang")
+        DataFrame=LabelFrame(MainFrame, bd=1, width=450, height=300, padx=31, pady=3, relief=RIDGE, font=('arial', 20, 'bold'), text="Daftar Laporan")
         DataFrame.pack(side=TOP)
 
         DataFrameLeft=Frame(DataFrame, height=20)
